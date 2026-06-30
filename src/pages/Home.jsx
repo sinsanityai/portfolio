@@ -6,19 +6,31 @@ export default function Home() {
   const supportingProjects = projects.filter((project) => project.slug !== 'sinsanity-threads');
 
   return (
-    <>
+    <div id="top">
+      <section className="motion-strip" aria-label="Visueller Einblick in Arbeitsbereiche">
+        <div className="motion-track">
+          <span>AI-assisted Art Direction</span>
+          <span>React/Vite Webshop</span>
+          <span>SEO Content Writing</span>
+          <span>Concept Development</span>
+          <span>Prompting & Iteration</span>
+          <span>Responsive Webdesign</span>
+        </div>
+      </section>
+
       <section className="hero section-shell">
         <div className="hero-copy">
           <p className="eyebrow">Portfolio · Sina Werner</p>
-          <h1>KI-gestützte Web-, Content- und Mediengestaltung.</h1>
+          <h1>Web, Content und KI-Workflows mit klarem Konzept.</h1>
           <p className="hero-text">
-            Ich entwickle digitale Inhalte, visuelle Konzepte und Webprojekte — von SEO-Texten über AI-assisted Art Direction bis zur umgesetzten React/Vite-Webanwendung.
+            Ich verbinde Sprache, Struktur und visuelle Ideen mit moderner Webumsetzung — von SEO-Texten über AI-assisted Art Direction bis zur veröffentlichten React/Vite-Anwendung.
           </p>
           <div className="hero-actions">
-            <a className="button button-primary" href="#projects">Projekte ansehen</a>
-            <a className="button button-secondary" href="mailto:hello@example.com">Kontakt aufnehmen</a>
+            <a className="button button-primary" href="#arbeiten">Arbeiten ansehen</a>
+            <a className="button button-secondary" href="#kontakt">Kontakt</a>
           </div>
         </div>
+
         <div className="hero-panel" aria-label="Portfolio-Schwerpunkte">
           <div className="panel-card large">
             <span>01</span>
@@ -32,15 +44,15 @@ export default function Home() {
           </div>
           <div className="panel-card accent">
             <span>03</span>
-            <strong>KI-Workflows</strong>
+            <strong>AI-assisted Workflows</strong>
             <p>Prompting, Konzeptentwicklung, Bildsprache und iterative Steuerung.</p>
           </div>
         </div>
       </section>
 
-      <section className="section-shell intro-grid">
+      <section className="section-shell intro-grid" id="ueber-mich">
         <div>
-          <p className="eyebrow">Profil</p>
+          <p className="eyebrow">Über mich</p>
           <h2>Content-Verständnis trifft Web-Umsetzung.</h2>
         </div>
         <p>
@@ -48,7 +60,7 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="section-shell" id="projects">
+      <section className="section-shell" id="arbeiten">
         <div className="section-heading">
           <p className="eyebrow">Ausgewählte Arbeiten</p>
           <h2>Featured Project</h2>
@@ -58,8 +70,8 @@ export default function Home() {
 
       <section className="section-shell project-grid-section">
         <div className="section-heading">
-          <p className="eyebrow">Case Studies</p>
-          <h2>Weitere Arbeitsproben</h2>
+          <p className="eyebrow">Arbeitsproben</p>
+          <h2>Weitere Projekte</h2>
         </div>
         <div className="project-grid">
           {supportingProjects.map((project) => (
@@ -68,7 +80,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section-shell skills-section">
+      <section className="section-shell skills-section" id="skills">
         <div className="section-heading">
           <p className="eyebrow">Skills</p>
           <h2>Womit ich arbeite</h2>
@@ -80,14 +92,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section-shell contact-section">
+      <section className="section-shell contact-section" id="kontakt">
         <p className="eyebrow">Kontakt</p>
         <h2>Lass uns über Projekte sprechen.</h2>
         <p>
-          Diese Seite ist als erste Portfolio-Version gedacht: klar, fokussiert und erweiterbar. Als Nächstes können Screenshots, echte Kontaktlinks und zusätzliche Projektbilder ergänzt werden.
+          Diese Portfolio-Version ist als klarer Onepager aufgebaut: schnelle Orientierung, visuelle Arbeitsproben und ausklappbare Case Studies für den Prozess dahinter.
         </p>
         <a className="button button-primary" href="mailto:hello@example.com">Mail schreiben</a>
       </section>
-    </>
+    </div>
   );
 }
