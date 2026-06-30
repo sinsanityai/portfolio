@@ -2,15 +2,17 @@ export const projects = [
   {
     slug: 'sinsanity-threads',
     title: 'Sinsanity Threads',
-    eyebrow: 'Featured Case Study',
+    eyebrow: 'Featured Project',
     category: 'React/Vite Webshop',
     year: '2026',
     summary:
-      'Ein digitaler Shop für Häkel- und Strickanleitungen mit alternativem Handmade-Stil, Produktkatalog, Warenkorb, Login, Checkout und Kaufhistorie.',
+      'Ein digitaler Shop für Häkel- und Strickanleitungen mit Produktkatalog, Warenkorb, Login, Checkout und Kaufhistorie.',
     role: 'Konzept, UX, SEO-Texte, KI-gestützte Umsetzung, Testing und Dokumentation',
     tags: ['React', 'Vite', 'Supabase', 'Vercel', 'GitHub', 'Mobile-first', 'SEO'],
     liveUrl: 'https://sinsanitythreads.vercel.app/',
     repoUrl: 'https://github.com/sinsanityai/sinsanitythreads',
+    previewLabel: 'Live Webshop',
+    visual: 'webshop',
     highlights: [
       'Produktkatalog, Detailseiten, Kategorien und Produktbilder',
       'Warenkorb mit Mengenänderung, Gesamtsumme und Checkout',
@@ -22,11 +24,11 @@ export const projects = [
     process:
       'Ich habe den Shop schrittweise aufgebaut: zuerst Positionierung, Seitenstruktur und UI, danach Produktdaten, Supabase-Anbindung, Auth, Warenkorb, Checkout, Rollenlogik, Testing und mobile Responsive-Fixes. ChatGPT wurde dabei als Planungs-, Prompting-, Debugging- und Umsetzungsassistent eingesetzt.',
     result:
-      'Das Ergebnis ist eine live veröffentlichte React/Vite-Anwendung mit konsistentem dark-edgy Design, funktionalem Shop-Flow und nachvollziehbarer Dokumentation des Entwicklungsprozesses.',
+      'Das Ergebnis ist eine live veröffentlichte React/Vite-Anwendung mit konsistentem Design, funktionalem Shop-Flow und nachvollziehbarer Dokumentation des Entwicklungsprozesses.',
     learnings: [
       'Saubere Planung vor dem Code spart später viele Umwege.',
       'Kleine Commits und Live-Tests machen Fehler schneller sichtbar.',
-      'Mobile-first ist besonders wichtig, wenn viele UI-Elemente wie Warenkorb, Checkout und Modals zusammenkommen.',
+      'Mobile-first ist besonders wichtig, wenn Warenkorb, Checkout und Modals zusammenkommen.',
     ],
   },
   {
@@ -38,7 +40,10 @@ export const projects = [
     summary:
       'Eine KI-gestützte Assistant-App für nachhaltige Mode, die beschädigte Kleidung analysiert und kreative Reparatur- oder Upcycling-Wege vorschlägt.',
     role: 'Idee, Zielgruppenanalyse, Content-Konzept, KI-Workflow und Teaser-Konzept',
-    tags: ['App Concept', 'Sustainable Fashion', 'Prompting', 'Video Concept', 'Content Strategy'],
+    tags: ['App Concept', 'Sustainable Fashion', 'Prompting', 'Video Concept'],
+    pdfUrl: '/work-samples/fix-and-remix.pdf',
+    previewLabel: 'Repair Assistant Concept',
+    visual: 'repair',
     highlights: [
       'Zielgruppe und Persona für Creative Revivers',
       'Feature-Konzept mit KI-Scan, Design-Optionen und Smart Tutorials',
@@ -66,7 +71,10 @@ export const projects = [
     summary:
       'Ein reduziertes Beauty-Kampagnenkonzept über leise Transformation, mineralische Oberflächen und kontrollierte urbane Bildsprache.',
     role: 'Art Direction, Promptentwicklung, visuelles Konzept, Storyboard und Nachbearbeitung',
-    tags: ['Art Direction', 'AI Imagery', 'Storyboard', 'Editorial', 'Visual Identity'],
+    tags: ['Art Direction', 'AI Imagery', 'Storyboard', 'Editorial'],
+    pdfUrl: '/work-samples/obsidian-ritual.pdf',
+    previewLabel: 'Editorial Campaign',
+    visual: 'editorial',
     highlights: [
       'Hero Shot als visuelle und konzeptionelle Grundlage',
       'Konsistenter Masterprompt für Atmosphäre, Farbpalette und Licht',
@@ -94,7 +102,14 @@ export const projects = [
     summary:
       'Ausgewählte SEO-Arbeitsproben: lokale Landingpage, B2B-Fachartikel zu Photovoltaik und nutzerorientierter Blogartikel zur Fensterpflege.',
     role: 'Recherche, Struktur, Keyword-Integration, Tonalität, Metadaten und CTAs',
-    tags: ['SEO', 'Content Writing', 'B2B', 'Landingpage', 'Blog', 'Readable Structure'],
+    tags: ['SEO', 'Content Writing', 'B2B', 'Landingpage', 'Blog'],
+    previewLabel: 'SEO Text Samples',
+    visual: 'seo',
+    pdfLinks: [
+      { label: 'Lokale Landingpage', href: '/work-samples/seo-lokale-landingpage.pdf' },
+      { label: 'Photovoltaik-Text', href: '/work-samples/seo-photovoltaik.pdf' },
+      { label: 'Fensterpflege-Blog', href: '/work-samples/seo-fensterpflege.pdf' },
+    ],
     highlights: [
       'SEO-Optimierung einer lokalen Landingpage für Erwachsenenbildung',
       'B2B-Fachtext zu Photovoltaik im Unternehmen',
