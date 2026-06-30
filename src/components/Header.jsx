@@ -1,27 +1,26 @@
-import { NavLink, Link } from 'react-router-dom';
-
 const navItems = [
-  { to: '/', label: 'Start' },
-  { to: '/projects/sinsanity-threads', label: 'Sinsanity Threads' },
-  { to: '/projects/seo-content-writing', label: 'SEO' },
+  { href: '#arbeiten', label: 'Arbeiten' },
+  { href: '#ueber-mich', label: 'Über mich' },
+  { href: '#skills', label: 'Skills' },
+  { href: '#kontakt', label: 'Kontakt' },
 ];
 
 export default function Header() {
   return (
     <header className="site-header">
-      <Link className="brand" to="/" aria-label="Zur Startseite">
+      <a className="brand" href="#top" aria-label="Zur Startseite">
         <span className="brand-mark">SW</span>
         <span>
           <strong>Sina Werner</strong>
-          <small>KI Web · Content · Media</small>
+          <small>Web · Content · KI</small>
         </span>
-      </Link>
+      </a>
 
-      <nav className="site-nav" aria-label="Hauptnavigation">
+      <nav className="site-nav" aria-label="Sprungnavigation">
         {navItems.map((item) => (
-          <NavLink key={item.to} to={item.to} end={item.to === '/'}>
+          <a key={item.href} href={item.href}>
             {item.label}
-          </NavLink>
+          </a>
         ))}
       </nav>
     </header>
