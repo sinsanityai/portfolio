@@ -130,13 +130,21 @@ export const projects = [
   },
 ];
 
-export const skills = [
-  'React/Vite Frontend',
-  'Responsive Webdesign',
-  'SEO & Content Writing',
-  'AI-assisted Workflows',
-  'Promptentwicklung',
-  'UX-Struktur',
-  'Konzeptentwicklung',
-  'Dokumentation & Testing',
+export const focusAreas = [
+  {
+    title: 'Content & Zielgruppenansprache',
+    text: 'SEO-orientiertes Schreiben auf Basis vorhandener Keywordsets, natürliche Keyword-Integration, Nutzerintention, klare Informationsstruktur und verständliche Sprache.',
+  },
+  {
+    title: 'KI-gestützte Konzeption & Storytelling',
+    text: 'Promptentwicklung, Storytelling, Moodboards, visuelle Konsistenz, iterative Überarbeitung und kritische Bewertung von KI-Ergebnissen.',
+  },
+  {
+    title: 'Digitale Projektpraxis',
+    text: 'Web-Prototyping mit KI-Unterstützung, React/Vite im Praxisprojekt, Shop-Konzept, Testing sowie GitHub/Vercel im Projektkontext.',
+  },
+  {
+    title: 'Struktur & Zusammenarbeit',
+    text: 'Organisiertes Arbeiten, lösungsorientierte Arbeitsweise, Problemerkennung, Dokumentation und verständliche Kommunikation im Projektprozess.',
+  },
 ];
