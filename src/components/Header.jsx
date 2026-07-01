@@ -1,7 +1,7 @@
 const navItems = [
-  { href: '#arbeiten', label: 'Arbeiten' },
   { href: '#ueber-mich', label: 'Über mich' },
-  { href: '#skills', label: 'Skills' },
+  { href: '#arbeiten', label: 'Arbeiten' },
+  { href: '#schwerpunkte', label: 'Schwerpunkte' },
   { href: '#kontakt', label: 'Kontakt' },
 ];
 
@@ -9,11 +9,8 @@ export default function Header() {
   return (
     <header className="site-header">
       <a className="brand" href="#top" aria-label="Zur Startseite">
-        <span className="brand-mark">SW</span>
-        <span>
-          <strong>Sina Werner</strong>
-          <small>Web · Content · KI</small>
-        </span>
+        <strong>Sina Werner</strong>
+        <small>Junior Content & Digital Designerin</small>
       </a>
 
       <nav className="site-nav" aria-label="Sprungnavigation">
@@ -23,6 +20,11 @@ export default function Header() {
           </a>
         ))}
       </nav>
+
+      <div className="header-contact" aria-label="Kontaktlinks">
+        <a href="mailto:hello@example.com">Mail</a>
+        <a href="https://github.com/sinsanityai" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
     </header>
   );
 }
