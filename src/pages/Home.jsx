@@ -1,5 +1,28 @@
 import ProjectCard from '../components/ProjectCard.jsx';
-import { projects, skills } from '../data/projects.js';
+import { focusAreas, projects } from '../data/projects.js';
+
+const workStripItems = [
+  {
+    label: 'Obsidian Ritual',
+    meta: 'AI-assisted Art Direction',
+    type: 'editorial',
+  },
+  {
+    label: 'Sinsanity Threads',
+    meta: 'Shop-Prototyp & Webdesign',
+    type: 'webshop',
+  },
+  {
+    label: 'SEO Content',
+    meta: 'Landingpages & Blogtexte',
+    type: 'seo',
+  },
+  {
+    label: 'Fix & Remix',
+    meta: 'Konzept & Storytelling',
+    type: 'concept',
+  },
+];
 
 export default function Home() {
   const featuredProject = projects.find((project) => project.slug === 'sinsanity-threads');
@@ -7,15 +30,13 @@ export default function Home() {
 
   return (
     <div id="top">
-      <section className="motion-strip" aria-label="Visueller Einblick in Arbeitsbereiche">
-        <div className="motion-track">
-          <span>AI-assisted Art Direction</span>
-          <span>SEO Content Writing</span>
-          <span>Storytelling & Concept</span>
-          <span>Prompting & Iteration</span>
-          <span>Web-Prototyping</span>
-          <span>Target Group Thinking</span>
-        </div>
+      <section className="work-strip section-shell" aria-label="Visueller Einblick in Arbeitsbereiche">
+        {workStripItems.map((item) => (
+          <article key={item.label} className={`work-strip-card work-strip-card-${item.type}`}>
+            <span>{item.meta}</span>
+            <strong>{item.label}</strong>
+          </article>
+        ))}
       </section>
 
       <section className="hero section-shell">
@@ -85,14 +106,21 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section-shell skills-section" id="skills">
-        <div className="section-heading">
-          <p className="eyebrow">Skills</p>
-          <h2>Womit ich arbeite</h2>
+      <section className="section-shell focus-section" id="schwerpunkte">
+        <div className="section-heading focus-heading">
+          <p className="eyebrow">Schwerpunkte</p>
+          <h2>Womit ich Projekte strukturiere.</h2>
+          <p>
+            Meine Arbeit entsteht an der Schnittstelle von Sprache, Zielgruppenverständnis, KI-gestützter Konzeption und digitaler Umsetzung.
+          </p>
         </div>
-        <div className="skills-list">
-          {skills.map((skill) => (
-            <span key={skill}>{skill}</span>
+        <div className="focus-grid">
+          {focusAreas.map((area, index) => (
+            <article className="focus-card" key={area.title}>
+              <span>{String(index + 1).padStart(2, '0')}</span>
+              <h3>{area.title}</h3>
+              <p>{area.text}</p>
+            </article>
           ))}
         </div>
       </section>
