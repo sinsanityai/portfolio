@@ -10,20 +10,20 @@ export default function Home() {
       <section className="motion-strip" aria-label="Visueller Einblick in Arbeitsbereiche">
         <div className="motion-track">
           <span>AI-assisted Art Direction</span>
-          <span>React/Vite Webshop</span>
           <span>SEO Content Writing</span>
-          <span>Concept Development</span>
+          <span>Storytelling & Concept</span>
           <span>Prompting & Iteration</span>
-          <span>Responsive Webdesign</span>
+          <span>Web-Prototyping</span>
+          <span>Target Group Thinking</span>
         </div>
       </section>
 
       <section className="hero section-shell">
         <div className="hero-copy">
           <p className="eyebrow">Portfolio · Sina Werner</p>
-          <h1>Web, Content und KI-Workflows mit klarem Konzept.</h1>
+          <h1>Junior Content & Digital Designerin.</h1>
           <p className="hero-text">
-            Ich verbinde Sprache, Struktur und visuelle Ideen mit moderner Webumsetzung — von SEO-Texten über AI-assisted Art Direction bis zur veröffentlichten React/Vite-Anwendung.
+            Mit SEO-Erfahrung, didaktischem Hintergrund und Praxis in KI-gestützter Konzeption und Web-Prototyping. Ich strukturiere Inhalte und Ideen so, dass daraus verständliche, visuelle und digitale Projekte werden.
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href="#arbeiten">Arbeiten ansehen</a>
@@ -34,18 +34,18 @@ export default function Home() {
         <div className="hero-panel" aria-label="Portfolio-Schwerpunkte">
           <div className="panel-card large">
             <span>01</span>
-            <strong>Webdesign & Frontend</strong>
-            <p>React/Vite, mobile-first Layouts, UX-Struktur und Deployment.</p>
+            <strong>Content & Zielgruppenansprache</strong>
+            <p>SEO-orientiertes Schreiben, natürliche Keyword-Integration, verständliche Sprache und klare Informationsstruktur.</p>
           </div>
           <div className="panel-card">
             <span>02</span>
-            <strong>SEO & Content</strong>
-            <p>Strukturierte Texte, Landingpages, Blogartikel und Metadaten.</p>
+            <strong>KI-Konzeption & Storytelling</strong>
+            <p>Promptentwicklung, visuelle Konsistenz, Storytelling und iterative Überarbeitung mit kritischem Blick.</p>
           </div>
           <div className="panel-card accent">
             <span>03</span>
-            <strong>AI-assisted Workflows</strong>
-            <p>Prompting, Konzeptentwicklung, Bildsprache und iterative Steuerung.</p>
+            <strong>Digitale Projektpraxis</strong>
+            <p>Web-Prototyping mit KI-Unterstützung, React/Vite im Praxisprojekt, Testing und Deployment im Projektkontext.</p>
           </div>
         </div>
       </section>
@@ -53,11 +53,16 @@ export default function Home() {
       <section className="section-shell intro-grid" id="ueber-mich">
         <div>
           <p className="eyebrow">Über mich</p>
-          <h2>Content-Verständnis trifft Web-Umsetzung.</h2>
+          <h2>Sprache, Struktur und Storytelling als roter Faden.</h2>
         </div>
-        <p>
-          Mein Hintergrund liegt in Sprache, Kommunikation und SEO. In der Weiterbildung zur KI Medien- und Content-Gestalterin verbinde ich diese Erfahrung mit Webentwicklung, visueller Konzeption und KI-gestützten Workflows. Dadurch kann ich Projekte nicht nur schreiben oder gestalten, sondern auch strukturiert planen, testen und online bringen.
-        </p>
+        <div className="intro-copy">
+          <p>
+            Mein Hintergrund liegt in Sprache, SEO-Content und Lehre. Als Dozentin für Deutsch als Zweitsprache habe ich gelernt, Inhalte so aufzubereiten, dass sie verständlich, zugänglich und nützlich werden. Dieser didaktische Hintergrund prägt bis heute meinen Blick auf Zielgruppen, Verständlichkeit und klare Struktur.
+          </p>
+          <p>
+            In meiner Weiterbildung zur KI Content- und Mediengestalterin verbinde ich diese Erfahrung mit Prompting, visueller Konzeption, Storytelling und Web-Prototyping. Ich arbeite gern iterativ: mit einer ersten Idee, klarer Richtung, kritischem Blick und der Bereitschaft, Entwürfe so lange zu schärfen, bis sie wirklich tragen.
+          </p>
+        </div>
       </section>
 
       <section className="section-shell" id="arbeiten">
