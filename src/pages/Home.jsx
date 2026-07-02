@@ -86,6 +86,31 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="section-shell focus-section" id="schwerpunkte">
+        <div className="section-heading focus-heading">
+          <p className="eyebrow">Schwerpunkte</p>
+          <h2>Ein Kern, vier Arbeitsbereiche.</h2>
+          <p>
+            Die Bereiche greifen ineinander: Sprache und Struktur geben den Rahmen, KI-Workflows helfen beim Entwickeln und Schärfen, digitale Projektpraxis macht Ideen sichtbar.
+          </p>
+        </div>
+
+        <div className="focus-map" aria-label="Mindmap meiner Schwerpunkte">
+          <article className="focus-core">
+            <strong>Ich strukturiere Inhalte und Ideen.</strong>
+            <p>So entstehen verständliche, visuelle und digitale Projekte.</p>
+          </article>
+
+          {focusAreas.map((area, index) => (
+            <article className={`focus-node focus-node-${index + 1}`} key={area.title}>
+              <span>{String(index + 1).padStart(2, '0')}</span>
+              <h3>{area.title}</h3>
+              <p>{area.text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
       <section className="section-shell" id="arbeiten">
         <div className="section-heading">
           <p className="eyebrow">Ausgewählte Arbeiten</p>
@@ -102,32 +127,6 @@ export default function Home() {
         <div className="project-grid">
           {supportingProjects.map((project) => (
             <ProjectCard key={project.slug} project={project} />
-          ))}
-        </div>
-      </section>
-
-      <section className="section-shell focus-section" id="schwerpunkte">
-        <div className="section-heading focus-heading">
-          <p className="eyebrow">Schwerpunkte</p>
-          <h2>Ein Kern, vier Arbeitsbereiche.</h2>
-          <p>
-            Die Bereiche greifen ineinander: Sprache und Struktur geben den Rahmen, KI-Workflows helfen beim Entwickeln und Schärfen, digitale Projektpraxis macht Ideen sichtbar.
-          </p>
-        </div>
-
-        <div className="focus-map" aria-label="Mindmap meiner Schwerpunkte">
-          <article className="focus-core">
-            <span>Kern</span>
-            <strong>Ich strukturiere Inhalte und Ideen.</strong>
-            <p>So entstehen verständliche, visuelle und digitale Projekte.</p>
-          </article>
-
-          {focusAreas.map((area, index) => (
-            <article className={`focus-node focus-node-${index + 1}`} key={area.title}>
-              <span>{String(index + 1).padStart(2, '0')}</span>
-              <h3>{area.title}</h3>
-              <p>{area.text}</p>
-            </article>
           ))}
         </div>
       </section>
