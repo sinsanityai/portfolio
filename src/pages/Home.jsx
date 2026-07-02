@@ -109,14 +109,21 @@ export default function Home() {
       <section className="section-shell focus-section" id="schwerpunkte">
         <div className="section-heading focus-heading">
           <p className="eyebrow">Schwerpunkte</p>
-          <h2>Womit ich Projekte strukturiere.</h2>
+          <h2>Ein Kern, vier Arbeitsbereiche.</h2>
           <p>
-            Meine Arbeit entsteht an der Schnittstelle von Sprache, Zielgruppenverständnis, KI-gestützter Konzeption und digitaler Umsetzung.
+            Die Bereiche greifen ineinander: Sprache und Struktur geben den Rahmen, KI-Workflows helfen beim Entwickeln und Schärfen, digitale Projektpraxis macht Ideen sichtbar.
           </p>
         </div>
-        <div className="focus-grid">
+
+        <div className="focus-map" aria-label="Mindmap meiner Schwerpunkte">
+          <article className="focus-core">
+            <span>Kern</span>
+            <strong>Ich strukturiere Inhalte und Ideen.</strong>
+            <p>So entstehen verständliche, visuelle und digitale Projekte.</p>
+          </article>
+
           {focusAreas.map((area, index) => (
-            <article className="focus-card" key={area.title}>
+            <article className={`focus-node focus-node-${index + 1}`} key={area.title}>
               <span>{String(index + 1).padStart(2, '0')}</span>
               <h3>{area.title}</h3>
               <p>{area.text}</p>
