@@ -6,6 +6,7 @@ import Home from './pages/Home.jsx';
 import ProjectDetail from './pages/ProjectDetail.jsx';
 import NotFound from './pages/NotFound.jsx';
 import './styles.css';
+import './focus-map.css';
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
