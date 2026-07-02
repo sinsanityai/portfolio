@@ -1,7 +1,7 @@
 const navItems = [
   { href: '#ueber-mich', label: 'Über mich' },
-  { href: '#arbeiten', label: 'Arbeiten' },
   { href: '#schwerpunkte', label: 'Schwerpunkte' },
+  { href: '#arbeiten', label: 'Arbeiten' },
   { href: '#kontakt', label: 'Kontakt' },
 ];
 
